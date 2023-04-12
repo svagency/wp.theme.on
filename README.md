@@ -1,2 +1,2 @@
-# wp.theme.on
-Base ON WP Theme
+# wp.theme.svag
+Our Vanilla WP Theme
