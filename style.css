@@ -497,4 +497,15 @@ img {
 
 /* ON IMAGE CSS 001 --------------------------------------------------------------------------- */
 
-.on-image-blocks{}
+.on-image-block{}
+
+/* ON LOTTIE CSS 001 --------------------------------------------------------------------------- */
+
+.on-lottie-block{
+    position: absolute;
+    top: 0;
+}
+
+.on-lottie-block .on-lottie{
+    width: 100%;
+}
