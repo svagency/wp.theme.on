@@ -86,12 +86,9 @@
         </div>
         </div>
     </footer>
-    
     </div>
-  	<!-- script type="text/javascript" src="<?php //echo $theme_folder_path; ?>/js/min/bootstrap.min.js"></script -->
-    <script type="text/javascript" src="<?php echo $theme_folder_path; ?>/js/min/raptive.min.js"></script>
-</body>
 
+</body>
 </html>
 
 <?php wp_footer(); ?>
