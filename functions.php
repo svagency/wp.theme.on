@@ -569,11 +569,6 @@ function smartwp_remove_wp_block_library_css(){
 add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100 );
 
 
-//add raptive js
-function add_raptive_js(){
-  wp_enqueue_script( 'raptive-script', get_template_directory_uri() . '/js/min/raptive.min.js' );
-}
-add_action( 'init', 'add_raptive_js', 9999 );
 
 /* skin login - needs to be sepparte css though*/
 function my_login_logo() { ?>

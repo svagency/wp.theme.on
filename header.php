@@ -18,9 +18,22 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-   
-  
-
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56W28VL');
+    </script>
     <meta charset=UTF-8>
     <meta http-equiv=X-UA-Compatible content="IE=edge">
     <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
@@ -47,10 +60,9 @@
     <meta name=msapplication-TileImage content="<?php echo $theme_folder_path; ?>/favicons/favicon-270x270.png">
     <meta name=msapplication-TileColor content=#6B65FF>
     <meta name=theme-color content=#6B65FF>
-
 </head>
 
-<body>
+<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56W28VL" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
     <div id=wrap>
         <header id=header>
             <nav class="navbar navbar-expand-md">
