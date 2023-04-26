@@ -139,13 +139,13 @@ if (!function_exists('bootscore_widgets_init')) :
 
     // Top Footer
     register_sidebar(array(
-      'name' => esc_html__('Top Footer', 'bootscore'),
+      'name' => esc_html__('Bottom Footer', 'bootscore'),
       'id' => 'top-footer',
       'description' => esc_html__('Add widgets here.', 'bootscore'),
-      'before_widget' => '<div class="footer_widget mb-5">',
-      'after_widget' => '</div>',
-      'before_title' => '<h2 class="widget-title">',
-      'after_title' => '</h2>'
+      'before_widget' => '',
+      'after_widget' => '',
+      'before_title' => '',
+      'after_title' => ''
     ));
     // Top Footer End
 

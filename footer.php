@@ -25,64 +25,85 @@
                     class="col-12 col-lg-9 col-xl-8">
                     <div class="row justify-content-between">
                         <div class="col-6 col-md-3">
-                            <nav>
-                                <ul class="footer-menu footer-menu--sitemap">
-                                    <li class=nav-item><a href=/creators class=nav-link>Creators</a></li>
-                                    <li class=nav-item><a href=/enterprise class=nav-link>Enterprise</a></li>
-                                    <li class=nav-item><a href=/creator-levels class=nav-link>Creator levels</a></li>
-                                </ul>
+                            <nav>							
+							  <?php  if (is_active_sidebar('footer-1')) : ?>
+								  <?php  dynamic_sidebar('footer-1'); ?>
+							  <?php  endif; ?>
+                                
                             </nav>
                         </div>
                         <div class="col-6 col-md-3">
                             <nav>
-                                <ul class="footer-menu footer-menu--sitemap">
-                                    <li class=nav-item><a href="https://cafemedia.com/careers/" target=_blank rel="noopener noreferrer" class=nav-link>Careers</a></li>
-                                    <li class=nav-item><a href="https://cafemedia.com/team/" target=_blank rel="noopener noreferrer" class=nav-link>Team</a></li>
-                                    <li class=nav-item><a href="https://cafemedia.com/contact/" target=_blank rel="noopener noreferrer" class=nav-link>Contact us</a></li>
-                                </ul>
+                                <?php  if (is_active_sidebar('footer-2')) : ?>
+								  <?php  dynamic_sidebar('footer-2'); ?>
+							  <?php  endif; ?>
                             </nav>
                         </div>
                         <div class="col-6 col-md-3">
                             <nav>
-                                <ul class="footer-menu footer-menu--sitemap">
-                                    <li class=nav-item><a href="https://adthrive.com/blog/" target=_blank rel="noopener noreferrer" class=nav-link>Blog</a></li>
-                                    <li class=nav-item><a href=/newsroom class=nav-link>Newsroom</a></li>
-                                    <li class=nav-item><a href="https://adthrive.com/resources/" target=_blank rel="noopener noreferrer" class=nav-link>Creator Resources</a></li>
-                                </ul>
+                                <?php  if (is_active_sidebar('footer-3')) : ?>
+								  <?php  dynamic_sidebar('footer-3'); ?>
+							  <?php  endif; ?>
                             </nav>
                         </div>
                         <div class="col-6 col-md-3">
                             <nav>
-                                <ul class="footer-menu footer-menu--sitemap">
-                                    <li class=nav-item><a href="https://www.remarkable-voices.com/" target=_blank rel="noopener noreferrer" class=nav-link>Remarkable Voices</a></li>
-                                    <li class=nav-item><a href="https://www.slickstream.com/" target=_blank rel="noopener noreferrer" class=nav-link>Slickstream</a></li>
-                                    <li class=nav-item><a href="https://webwideopen.com/" target=_blank rel="noopener noreferrer" class=nav-link>Web Wide Open</a></li>
-                                </ul>
+                                <?php  if (is_active_sidebar('footer-4')) : ?>
+								  <?php  dynamic_sidebar('footer-4'); ?>
+							  <?php  endif; ?>
                             </nav>
                         </div>
                     </div>
             </div>
         </div>
         <div class="footer-officials row justify-content-between">
-            <div class="col-12 col-md-auto mt-4 order-3 order-md-1"><small class=copyright>&copy; 2023 Raptive.</small></div>
-            <div class="col-6 col-md-auto mt-4 order-2 order-md-2">
-                <nav>
-                    <ul class="footer-menu footer-menu--policies">
-                        <li class=nav-item><a href="https://cafemedia.com/terms/" target=_blank rel="noopener noreferrer" class=nav-link>Terms & Conditions</a></li>
-                        <li class=nav-item><a href="https://cafemedia.com/privacy/" target=_blank rel="noopener noreferrer" class=nav-link>Privacy Policy</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-6 col-md-auto mt-4 order-1 order-md-3">
-                <nav>
-                    <ul class="footer-menu footer-menu--socials">
-                        <li class=nav-item><a href="https://www.facebook.com/WeAreRaptive/" title="Raptive on Facebook" target=_blank rel="noopener noreferrer" class=nav-link>Facebook</a></li>
-                        <li class=nav-item><a href="https://www.instagram.com/weareraptive/" title="Raptive on Instagram" target=_blank rel="noopener noreferrer" class=nav-link>Instagram</a></li>
-                        <li class=nav-item><a href="https://www.linkedin.com/company/weareraptive/" title="Raptive on Linkedin" target=_blank rel="noopener noreferrer" class=nav-link>Linkedin</a></li>
-                        <li class=nav-item><a href="https://twitter.com/weareraptive/" title="Raptive on Twitter" target=_blank rel="noopener noreferrer" class=nav-link>Twitter</a></li>
-                    </ul>
-                </nav>
-            </div>
+			
+            <?php  //if (is_active_sidebar('top-footer')) : ?>
+                <?php // dynamic_sidebar('top-footer'); ?>
+            <?php // endif; ?>
+			
+			 <div class="col-12 col-md-auto mt-4 order-3 order-md-1">
+        <small class="copyright">© 2023 Raptive.</small>
+      </div>
+      <div class="col-6 col-md-auto mt-4 order-2 order-md-2">
+        <nav>
+          <ul class="footer-menu footer-menu--policies">
+                          <li class="nav-item">
+                <a href="https://cafemedia.com/terms/" target="_blank" rel="noopener noreferrer" class="nav-link">Terms &amp; Conditions</a>
+              </li>
+                          <li class="nav-item">
+                <a href="https://cafemedia.com/privacy/" target="_blank" rel="noopener noreferrer" class="nav-link">Privacy Policy</a>
+              </li>
+                      </ul>
+        </nav>
+      </div>
+      <div class="col-6 col-md-auto mt-4 order-1 order-md-3">
+        <nav>
+          <ul class="footer-menu footer-menu--socials">
+                          <li class="nav-item">
+                <a href="https://www.facebook.com/WeAreRaptive/" title="Raptive on Facebook" target="_blank" rel="noopener noreferrer" class="nav-link">
+                  Facebook
+                </a>
+              </li>
+                          <li class="nav-item">
+                <a href="https://www.instagram.com/weareraptive/" title="Raptive on Instagram" target="_blank" rel="noopener noreferrer" class="nav-link">
+                  Instagram
+                </a>
+              </li>
+                          <li class="nav-item">
+                <a href="https://www.linkedin.com/company/weareraptive/" title="Raptive on Linkedin" target="_blank" rel="noopener noreferrer" class="nav-link">
+                  Linkedin
+                </a>
+              </li>
+                          <li class="nav-item">
+                <a href="https://twitter.com/weareraptive/" title="Raptive on Twitter" target="_blank" rel="noopener noreferrer" class="nav-link">
+                  Twitter
+                </a>
+              </li>
+                      </ul>
+        </nav>
+      </div>
+			
         </div>
         </div>
     </footer>
